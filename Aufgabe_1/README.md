@@ -6,6 +6,6 @@ Ihre Antwort
 ## 3. Eine Fehlermeldung und Ihre Lösung
 Ihre Antwort
 ## 4. Was ist JupyterLab?
-Ihre Antwort
+JupyterLab ist eine webbasierte, interaktive Entwicklungsumgebung und Benutzeroberfläche für Juypter-Notebooks, -Codes und -Daten.
 ## 5. Was ist der große Unterschied zwischen den Webframeworks flask und Django
 

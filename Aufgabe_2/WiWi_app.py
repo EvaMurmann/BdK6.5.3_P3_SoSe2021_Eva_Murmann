@@ -16,18 +16,10 @@ app = Flask (__name__)
 def home_page():
     return render_template("WiWi_display.html")
 
-@app.route("/about/<username>") #Information page
-def show_about(username):
-    return f"<h2>Homepage of {username}</h2>"
-
 @app.route("/info") #Information page
 def show_info():
-    return "<p>Some information</p>"
-    
-    
-@app.route("/Search/<Institut>") #
-def WiWi_display(Institut):
-    return render_template ("WiWi_display.html", Institut=Institut)
+    return render_template("WiWi_info.html")
+        
     
 @app.route("/WiWi_form")
 def isbn_form():
@@ -35,7 +27,8 @@ def isbn_form():
 
 @app.route("/WiWi_form_content", methods=["GET"])
 def WiWi_form_display():
-    Institut = request.args.get("Institut")
+    Institut = request.args.get ("WiWi")
     print(request.args)
-    return render_template ("WiWi_display.html", Institut=Institut)
+    return render_template("WiWi_display.html", Institut=Institut)
+    
 
